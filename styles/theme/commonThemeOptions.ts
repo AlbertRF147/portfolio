@@ -6,7 +6,7 @@ const commonThemeOptions: ThemeOptions = {
     MuiToolbar: {
       styleOverrides: {
         root: {
-          padding: 0,
+          padding: 0
         },
       },
     },

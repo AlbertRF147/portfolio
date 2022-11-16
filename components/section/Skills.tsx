@@ -20,6 +20,10 @@ import PhotoshopIcon from 'components/icon/Photoshop';
 import ComponentsContext from 'context/componentsContext';
 // type
 interface SkillsProps {}
+// icons
+import { IconContext } from "react-icons";
+import { FaCss3, FaJs, FaNode, FaReact } from 'react-icons/fa';
+import { SiJquery, SiMaterialui, SiMongodb, SiMysql, SiNextdotjs, SiVuedotjs } from 'react-icons/si'
 
 const CustomContainer = styled(Container)<ContainerProps>(({ theme }) => ({
   marginBottom: '5rem',
@@ -40,27 +44,87 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
   const skills = [
     {
       Icon: (
-        <PhotoshopIcon bgColor="white" textColor="tomato" fontSize="large" />
+        // <PhotoshopIcon bgColor="white" textColor="tomato" fontSize="large" />
+        <IconContext.Provider value={{ size: '3rem' }}>
+          <FaReact />
+        </IconContext.Provider>
       ),
-      title: 'Photoshop',
+      title: 'React',
       progressValue: 78,
     },
     {
       Icon: (
-        <LightroomCCIcon bgColor="white" textColor="tomato" fontSize="large" />
+        // <PhotoshopIcon bgColor="white" textColor="tomato" fontSize="large" />
+        <IconContext.Provider value={{ size: '2rem' }}>
+          <SiMaterialui />
+        </IconContext.Provider>
       ),
-      title: 'Lightroom',
+      title: 'MUI',
+      progressValue: 78,
+    },
+    {
+      Icon: (
+        // <PhotoshopIcon bgColor="white" textColor="tomato" fontSize="large" />
+        <IconContext.Provider value={{ size: '2rem' }}>
+          <SiNextdotjs />
+        </IconContext.Provider>
+      ),
+      title: 'NextJS',
+      progressValue: 78,
+    },
+    {
+      Icon: (
+        // <PhotoshopIcon bgColor="white" textColor="tomato" fontSize="large" />
+        <IconContext.Provider value={{ size: '2rem' }}>
+          <SiVuedotjs />
+        </IconContext.Provider>
+      ),
+      title: 'VueJS',
+      progressValue: 78,
+    },
+    {
+      Icon: (
+        <IconContext.Provider value={{ size: '2rem' }}>
+          <FaJs />
+        </IconContext.Provider>
+      ),
+      title: 'Javascript',
       progressValue: 83,
     },
     {
       Icon: (
-        <IllustratorCCIcon
-          bgColor="white"
-          textColor="tomato"
-          fontSize="large"
-        />
+        <IconContext.Provider value={{ size: '3rem' }}>
+          <FaNode />
+        </IconContext.Provider>
       ),
-      title: 'Illustrator',
+      title: 'NodeJS',
+      progressValue: 97,
+    },
+    {
+      Icon: (
+        <IconContext.Provider value={{ size: '2rem' }}>
+          <FaCss3 />
+        </IconContext.Provider>
+      ),
+      title: 'CSS',
+      progressValue: 97,
+    },
+    {
+      Icon: (
+        <IconContext.Provider value={{ size: '2rem' }}>
+          <SiJquery />
+        </IconContext.Provider>
+      ),
+      title: 'JQuery',
+      progressValue: 97,
+    },
+    {
+      Icon: (
+        <IconContext.Provider value={{ size: '3rem' }}>
+          <SiMongodb />
+        </IconContext.Provider>
+      ),
+      title: 'MongoDB',
       progressValue: 97,
     },
   ];
@@ -76,7 +140,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
             <CustomGridItem
               item
               key={`${skill.title} - ${skill.progressValue} - ${index}`}
-              xs={12}
+              xs={6}
               sm={6}
               md={4}
             >

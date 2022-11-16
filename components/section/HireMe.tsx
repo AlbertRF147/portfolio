@@ -35,7 +35,7 @@ const HireMe: React.FunctionComponent<HireMeProps> = (props) => {
       <CustomContainerGrid>
         <CustomGridItem item md order={{ xs: 2, md: 1 }}>
           <Typography component="h2" variant="h4" textAlign="center">
-            I am available as freelancer.
+            I am always open to new adventures.
           </Typography>
           <ButtonLink
             color="info"

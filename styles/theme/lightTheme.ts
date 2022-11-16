@@ -6,10 +6,23 @@ import commonThemeOptions from 'styles/theme/commonThemeOptions';
 const { components: commonComponentsOptions } = commonThemeOptions;
 
 const lightTheme = createTheme({
+  typography: {
+    body1: {
+      fontSize: '1.3rem',
+      '@media (max-width: 600px)': {
+        fontSize: '1.1rem'
+      }
+    },
+    h4: {
+      '@media (max-width: 600px)': {
+        fontSize: '2rem'
+      }
+    }
+  },
   palette: {
     mode: 'light',
     primary: {
-      main: '#FF6347',
+      main: '#FF1053',
       light: '#FF826B',
       dark: '#B24531',
       contrastText: '#FFFFFF',
@@ -24,15 +37,15 @@ const lightTheme = createTheme({
       main: '#FFFFFF',
       light: '#FFFFFF',
       dark: '#B2B2B2',
-      contrastText: '#FF6347',
+      contrastText: '#FF1053',
     },
     background: {
-      default: '#FF6347',
-      paper: '#fff',
+      default: '#FFA400',
+      paper: '#FAFAFF',
     },
     text: {
       primary: '#ffffff',
-      secondary: '#383838',
+      secondary: '#00171F',
       disabled: '#777777',
     },
   },
