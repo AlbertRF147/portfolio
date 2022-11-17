@@ -36,8 +36,8 @@ interface ProjectCardProps extends CardProps {
   imageSrc: string;
   title: string;
   likes: number;
-  description: string;
-  stack: string[];
+  description?: string;
+  stack?: string[];
   onButtonClick?: () => void;
 }
 
@@ -136,7 +136,7 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
           )}
         </Typography>
         <Container sx={{ display: 'flex', justifyContent: 'end' }}>
-          {stack.map(_stack => (
+          {stack && stack.map(_stack => (
             <Badge sx={{ padding: 1 }}>
               <IconContext.Provider value={{ size: '1.4rem' }}>
                 <StackIcon name={_stack} />
