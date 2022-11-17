@@ -39,7 +39,7 @@ const ContactForm: React.FunctionComponent<ContactFormProps> = (props) => {
         }
         subheader={
           <Typography component="p" variant="subtitle1" color="text.disabled">
-            Lorem ipsum dolor sit amet.
+            Fill in the form with your details.
           </Typography>
         }
       />

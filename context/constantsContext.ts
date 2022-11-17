@@ -4,24 +4,24 @@ import * as React from 'react';
 import navLinks from 'constants/navLinks';
 import pages from 'constants/pages';
 import projectsData, { Project } from 'constants/projectsData';
-import blogPosts from 'constants/blogPostsData';
+import experiencePosts from 'constants/experiencePostsData';
 // type
 import { NavLink } from 'constants/navLinks';
 import { Pages } from 'constants/pages';
-import { BlogPost } from 'types/blogPostType';
+import { ExperiencePost, ExperiencePostDetails } from 'types/experiencePostType';
 
 interface ContextProps {
   navLinks?: NavLink[];
   pages?: Pages;
   projects?: Project[];
-  blogPosts?: BlogPost[];
+  experiencePosts?: ExperiencePost[];
 }
 
 const context: ContextProps = {
   navLinks,
   pages,
   projects: projectsData,
-  blogPosts,
+  experiencePosts,
 };
 
 const ConstantsContext = React.createContext(context);

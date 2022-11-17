@@ -9,10 +9,10 @@ import { Box, BoxProps, Grid, Typography, styled } from '@mui/material';
 // custom component
 import Markdown from 'components/common/Markdown';
 import MainLayout from 'components/layout/MainLayout';
-// blogPost data
-import blogPosts from 'constants/blogPostsData';
+// experiencePost data
+import experiencePosts from 'constants/experiencePostsData';
 // custom lib
-import { getBlogPostsId, getBlogPostById } from 'lib/blogPost';
+import { getExperiencePostsId, getExperiencePostById } from 'lib/experiencePost';
 // type
 import type {
   GetStaticPaths,
@@ -20,11 +20,11 @@ import type {
   GetStaticPropsContext,
   NextPage,
 } from 'next';
-import { BlogPost as BlogPostDataProps } from 'types/blogPostType';
+import { ExperiencePost as ExperiencePostDataProps } from 'types/experiencePostType';
 import ProjectNotFound from 'components/section/ProjectNotFound';
 import ContainerGrid from 'components/common/ContainerGrid';
-interface BlogPostProps {
-  blogPost?: string;
+interface ExperiencePostProps {
+  experiencePost?: string;
   content?: string;
 }
 
@@ -35,20 +35,20 @@ const CustomContainer = styled(Box)<BoxProps>(({ theme }) => ({
   },
 }));
 
-const BlogPost: NextPage<BlogPostProps> = (props) => {
-  const { blogPost, content = '' } = props;
+const ExperiencePost: NextPage<ExperiencePostProps> = (props) => {
+  const { experiencePost, content = '' } = props;
 
-  if (!blogPost) return <ProjectNotFound />;
+  if (!experiencePost) return <ProjectNotFound />;
 
-  const parsedBlogPost: BlogPostDataProps = JSON.parse(blogPost);
+  const parsedExperiencePost: ExperiencePostDataProps = JSON.parse(experiencePost);
   const { text: readTime } = readingTime(content);
-  const date = dayjs(parsedBlogPost.date);
+  const date = dayjs(parsedExperiencePost.date);
 
   return (
     <MainLayout>
       <CustomContainer>
         <Typography component="h1" textAlign="center" variant="h4">
-          {parsedBlogPost.title}
+          {parsedExperiencePost.title}
         </Typography>
         <Typography
           color="text.secondary"
@@ -69,36 +69,36 @@ const BlogPost: NextPage<BlogPostProps> = (props) => {
   );
 };
 
-export default BlogPost;
+export default ExperiencePost;
 
 export const getStaticProps: GetStaticProps = async (
   context: GetStaticPropsContext
 ) => {
   const { params } = context;
-  const blogPost = blogPosts.find((blogPost) => blogPost.id === params!.id);
+  const experiencePost = experiencePosts.find((experiencePost) => experiencePost.id === params!.id);
 
-  if (!blogPost) return { props: {} };
+  if (!experiencePost) return { props: {} };
 
-  const filename = blogPost.filename;
-  const { content } = await getBlogPostById(filename);
+  const filename = experiencePost.filename;
+  const { content } = await getExperiencePostById(filename);
 
   if (!content)
     return {
       props: {
-        blogPost: JSON.stringify(blogPost),
+        experiencePost: JSON.stringify(experiencePost),
       },
     };
 
   return {
     props: {
-      blogPost: JSON.stringify(blogPost),
+      experiencePost: JSON.stringify(experiencePost),
       content,
     },
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getBlogPostsId();
+  const paths = getExperiencePostsId();
 
   return {
     paths,

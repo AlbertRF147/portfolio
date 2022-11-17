@@ -3,7 +3,7 @@ import * as React from 'react';
 // @mui
 import { Grid, Grow, Typography } from '@mui/material';
 // custom component
-import BlogCard from 'components/common/BlogCard';
+import ExperienceCard from 'components/common/ExperienceCard';
 import ContainerGrid from 'components/common/ContainerGrid';
 import MainLayout from 'components/layout/MainLayout';
 // custom context
@@ -12,8 +12,8 @@ import ConstantsContext from 'context/constantsContext';
 // type
 import type { NextPage } from 'next';
 
-const Blog: NextPage = (props) => {
-  const { pages, blogPosts } = React.useContext(ConstantsContext);
+const Experience: NextPage = (props) => {
+  const { pages, experiencePosts } = React.useContext(ConstantsContext);
 
   return (
     <MainLayout pageData={pages && pages.projects}>
@@ -23,7 +23,7 @@ const Blog: NextPage = (props) => {
         textAlign="center"
         variant="h2"
       >
-        Blog
+        Experience
       </Typography>
       <Typography
         color="text.secondary"
@@ -34,17 +34,17 @@ const Blog: NextPage = (props) => {
       >
         Be up to date in photography and design
       </Typography>
-      {blogPosts ? (
-        <ContainerGrid sx={{ padding: { xs: '1rem', sm: '2rem' } }}>
-          {blogPosts.map((post, index) => (
+      {experiencePosts ? (
+        <ContainerGrid sx={{ padding: { xs: '1rem', sm: '2rem' }, justifyContent: 'center' }}>
+          {experiencePosts.map((post, index) => (
             <Grow
               in={true}
               key={post.title + index}
               timeout={(index + 1) * 500}
             >
               <Grid item xs={12} sm={6} md={4} lg={3}>
-                <BlogCard
-                  href={`/blog/${post.id}`}
+                <ExperienceCard
+                  href={`/experience/${post.id}`}
                   readTime={5}
                   imageAlt={post.image.alt}
                   imageSrc={post.image.src}
@@ -70,4 +70,4 @@ const Blog: NextPage = (props) => {
   );
 };
 
-export default Blog;
+export default Experience;

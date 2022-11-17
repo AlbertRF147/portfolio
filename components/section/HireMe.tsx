@@ -58,7 +58,7 @@ const HireMe: React.FunctionComponent<HireMeProps> = (props) => {
             height={600}
             loading="lazy"
             onLoad={() => setIsLoaded(true)}
-            src="/sections/freelancer-male.svg"
+            src="/sections/adventure.svg"
             width={600}
           />
           {!isLoaded && (

@@ -50,7 +50,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
         </IconContext.Provider>
       ),
       title: 'React',
-      progressValue: 78,
+      progressValue: 80,
     },
     {
       Icon: (
@@ -60,7 +60,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
         </IconContext.Provider>
       ),
       title: 'MUI',
-      progressValue: 78,
+      progressValue: 60,
     },
     {
       Icon: (
@@ -70,7 +70,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
         </IconContext.Provider>
       ),
       title: 'NextJS',
-      progressValue: 78,
+      progressValue: 60,
     },
     {
       Icon: (
@@ -80,7 +80,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
         </IconContext.Provider>
       ),
       title: 'VueJS',
-      progressValue: 78,
+      progressValue: 55,
     },
     {
       Icon: (
@@ -89,7 +89,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
         </IconContext.Provider>
       ),
       title: 'Javascript',
-      progressValue: 83,
+      progressValue: 90,
     },
     {
       Icon: (
@@ -98,7 +98,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
         </IconContext.Provider>
       ),
       title: 'NodeJS',
-      progressValue: 97,
+      progressValue: 70,
     },
     {
       Icon: (
@@ -107,7 +107,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
         </IconContext.Provider>
       ),
       title: 'CSS',
-      progressValue: 97,
+      progressValue: 90,
     },
     {
       Icon: (
@@ -116,7 +116,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
         </IconContext.Provider>
       ),
       title: 'JQuery',
-      progressValue: 97,
+      progressValue: 90,
     },
     {
       Icon: (
@@ -125,7 +125,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
         </IconContext.Provider>
       ),
       title: 'MongoDB',
-      progressValue: 97,
+      progressValue: 70,
     },
   ];
 
@@ -148,7 +148,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
                 size={100}
                 value={skill.progressValue}
                 Icon={skill.Icon}
-                subtitle={`${skill.title} | ${skill.progressValue}%`}
+                subtitle={`${skill.title}`}
               />
             </CustomGridItem>
           ))}
