@@ -32,7 +32,7 @@ const Experience: NextPage = (props) => {
         textAlign="center"
         variant="body1"
       >
-        Be up to date in photography and design
+        This has been my journey so far.
       </Typography>
       {experiencePosts ? (
         <ContainerGrid sx={{ padding: { xs: '1rem', sm: '2rem' }, justifyContent: 'center' }}>

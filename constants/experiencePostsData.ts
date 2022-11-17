@@ -8,7 +8,6 @@ import { ExperiencePost } from 'types/experiencePostType';
 const experiencePosts: ExperiencePost[] = [
   createPost({
     category: ['photography'],
-    date: dayjs().subtract(6, 'week'),
     id: 'freelancer',
     image: {
       alt: 'freelancer',
@@ -22,7 +21,6 @@ const experiencePosts: ExperiencePost[] = [
   }),
   createPost({
     category: ['design'],
-    date: dayjs().subtract(3, 'week'),
     id: 'qubit',
     image: {
       alt: 'qubit',
@@ -36,7 +34,6 @@ const experiencePosts: ExperiencePost[] = [
   }),
   createPost({
     category: ['photography'],
-    date: dayjs().subtract(2, 'week'),
     id: 'coveo',
     image: {
       alt: 'coveo',

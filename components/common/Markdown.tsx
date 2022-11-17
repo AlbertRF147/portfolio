@@ -157,7 +157,7 @@ const Markdown: React.FunctionComponent<MarkdownProps> = (props) => {
             img: {
               component: Image,
               props: {
-                height: 50,
+                height: 30,
                 layout: 'responsive',
                 objectFit: 'contain',
                 width: '100%',

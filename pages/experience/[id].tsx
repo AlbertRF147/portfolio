@@ -23,6 +23,7 @@ import type {
 import { ExperiencePost as ExperiencePostDataProps } from 'types/experiencePostType';
 import ProjectNotFound from 'components/section/ProjectNotFound';
 import ContainerGrid from 'components/common/ContainerGrid';
+import ImageWithSkeleton from 'components/common/ImageWithSkeleton';
 interface ExperiencePostProps {
   experiencePost?: string;
   content?: string;
@@ -42,25 +43,12 @@ const ExperiencePost: NextPage<ExperiencePostProps> = (props) => {
 
   const parsedExperiencePost: ExperiencePostDataProps = JSON.parse(experiencePost);
   const { text: readTime } = readingTime(content);
-  const date = dayjs(parsedExperiencePost.date);
 
   return (
     <MainLayout>
       <CustomContainer>
-        <Typography component="h1" textAlign="center" variant="h4">
-          {parsedExperiencePost.title}
-        </Typography>
-        <Typography
-          color="text.secondary"
-          component="p"
-          marginTop="1rem"
-          textAlign="center"
-          variant="body1"
-        >
-          {readTime} - Published at {date.toDate().toDateString()}
-        </Typography>
         <ContainerGrid>
-          <Grid item xs={12} md={8} sx={{ margin: '3rem auto 1rem' }}>
+          <Grid item xs={12} md={8} sx={{ margin: '0 auto 1rem' }}>
             <Markdown content={content} />
           </Grid>
         </ContainerGrid>
