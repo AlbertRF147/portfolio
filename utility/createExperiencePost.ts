@@ -1,7 +1,7 @@
 // type
-import { BlogPost, BlogPostDetails } from 'types/blogPostType';
+import { ExperiencePost, ExperiencePostDetails } from 'types/experiencePostType';
 
-export const createPost = (props: BlogPostDetails): BlogPost => {
+export const createPost = (props: ExperiencePostDetails): ExperiencePost => {
   const { category, date, id, image, filename, title } = props;
 
   return {

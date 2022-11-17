@@ -2,15 +2,15 @@ import fs from 'fs';
 import path from 'path';
 import { remark } from 'remark';
 
-const blogPostsDir = path.join(process.cwd(), 'posts/blog');
+const experiencePostsDir = path.join(process.cwd(), 'posts/experience');
 
-export const getBlogPostById = async (
+export const getExperiencePostById = async (
   id: string
 ): Promise<{ content: string | null }> => {
-  const blogPostFullPath = path.join(blogPostsDir, `${id}.md`);
+  const experiencePostFullPath = path.join(experiencePostsDir, `${id}.md`);
 
   try {
-    const fileContent = fs.readFileSync(blogPostFullPath, 'utf8');
+    const fileContent = fs.readFileSync(experiencePostFullPath, 'utf8');
 
     const processedContent = await remark().process(fileContent);
     const content = processedContent.toString();
@@ -27,9 +27,9 @@ export const getBlogPostById = async (
   };
 };
 
-export const getBlogPostsId = () => {
+export const getExperiencePostsId = () => {
   try {
-    const fileNames = fs.readdirSync(blogPostsDir);
+    const fileNames = fs.readdirSync(experiencePostsDir);
 
     return fileNames.map((fileName) => ({
       params: {
@@ -37,7 +37,7 @@ export const getBlogPostsId = () => {
       },
     }));
   } catch (error) {
-    console.log(`error - Couldn't read this dir files: ${blogPostsDir}`);
+    console.log(`error - Couldn't read this dir files: ${experiencePostsDir}`);
   }
 
   return [

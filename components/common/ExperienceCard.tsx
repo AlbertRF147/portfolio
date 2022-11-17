@@ -14,7 +14,7 @@ import {
 import ImageWithSkeleton from 'components/common/ImageWithSkeleton';
 import ButtonLink from 'components/common/ButtonLink';
 // type
-interface BlogCardProps extends CardProps {
+interface ExperienceCardProps extends CardProps {
   href?: string;
   readTime?: number;
   imageAlt?: string;
@@ -64,7 +64,7 @@ const CustomCardActions = styled(CardActions)<CardActionsProps>(
   })
 );
 
-const BlogCard: React.FunctionComponent<BlogCardProps> = (props) => {
+const ExperienceCard: React.FunctionComponent<ExperienceCardProps> = (props) => {
   const {
     children,
     href = '#',
@@ -82,7 +82,7 @@ const BlogCard: React.FunctionComponent<BlogCardProps> = (props) => {
           alt={imageAlt}
           src={imageSrc}
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
         />
         <CardTitleWrapper>
           <Typography component="h2" variant="h5" color="text.secondary">
@@ -107,4 +107,4 @@ const BlogCard: React.FunctionComponent<BlogCardProps> = (props) => {
   );
 };
 
-export default BlogCard;
+export default ExperienceCard;

@@ -1,38 +1,10 @@
-![person holding ballpoint pen writing on white paper](/posts/person%20holding%20ballpoint%20pen%20writing%20on%20white%20paper.jpg)
+![freelancer](/posts/freelancer.jpeg)
 
-# Heading One
+# Freelancer.com
 
-## Heading Two
+_Freelancer is a marketplace where employers and employees are able to find each other. The site allows employers to post work for site members who place bids in a competitive tender process. The site also allows members to host and enter contests for which prize money is offered as a reward. Freelancers and employers develop profiles on the site as they offer, win and complete work and write and receive reviews of people they work with or for. The site's members receive a finite number of bids to use on the site, which are periodically replenished. A series of account options are offered, ranging from free accounts through to professional subscriptions._
 
-### Heading Three
-
-#### Heading Four
-
-##### Heading Five
-
-###### Heading Six
-
-## Inline text style example
-
-**bold text sample**  
-_italic text sample_  
-**_bold and italic text sample_**
-
-## Paragraph containing \<br /> example
-
-Lorem ipsum dolor sit  
-amet consectetur adipisicing elit. Dicta, numquam ipsam.
-
-## Paragraph example
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, numquam ipsam. Quidem dolor beatae eius doloremque delectus deserunt veniam necessitatibus!
-
-## Html \<pre>\</pre> example
-
-<pre>
-Lorem
-ipsum             dolor sit amet consectetur adipisicing           elit.
-</pre>
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Freelancer.com)
 
 ## ordered list example
 

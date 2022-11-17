@@ -8,6 +8,7 @@ interface CustomButtonProps extends ButtonProps {}
 const CustomButtonRoot = styled(Button)<ButtonProps>(({ theme, variant }) => ({
   textTransform: 'capitalize',
   boxShadow: 'none',
+  fontSize: '1.2rem',
   '&: hover': {
     boxShadow: 'none',
     backgroundColor: 'rgba(255, 255, 255, 0.2)',

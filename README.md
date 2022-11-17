@@ -64,21 +64,21 @@ theBag is a multipurpose template made by [Nextjs](https://nextjs.org/) and [MUI
 
    - "Black and White usb hair mask box and tube": Photo by [Glenn Claire](https://unsplash.com/@glennclaire?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/@glennclaire?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-#### blog
+#### experience
 
-1. Photo in "How to shoot beautiful photos in sunlight?" blog post:
+1. Photo in "How to shoot beautiful photos in sunlight?" experience post:
 
-   - "woman doing yoga meditation on brown parquet flooring": Photo by [Jared Rice](https://unsplash.com/@jareddrice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/blog-post-image?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+   - "woman doing yoga meditation on brown parquet flooring": Photo by [Jared Rice](https://unsplash.com/@jareddrice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/experience-post-image?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-2. Photo in "How to be creative in design?" blog post:
+2. Photo in "How to be creative in design?" experience post:
 
-   - "person holding light bulb": Photo by [Diego PH](https://unsplash.com/@jdiegoph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/blog-post-image?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+   - "person holding light bulb": Photo by [Diego PH](https://unsplash.com/@jdiegoph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/experience-post-image?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-3. Photo in "21 tips that every desinger must know" blog post:
+3. Photo in "21 tips that every desinger must know" experience post:
 
-   - "person holding ballpoint pen writing on white paper": Photo by [STIL](https://unsplash.com/@stilclassics?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/blog-post-image?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+   - "person holding ballpoint pen writing on white paper": Photo by [STIL](https://unsplash.com/@stilclassics?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/experience-post-image?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-4. Photo in "Tips for photographers when it's raining" blog post:
+4. Photo in "Tips for photographers when it's raining" experience post:
    - "water droplets on glass window": Photo by [Frame Harirak](https://unsplash.com/@framemily?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/raindrop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 ### icons

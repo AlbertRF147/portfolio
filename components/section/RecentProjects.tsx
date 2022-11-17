@@ -60,7 +60,9 @@ const RecentProjects: React.FunctionComponent<RecentProjectsProps> = (
                 imageSrc={project.images[0].src}
                 title={project.title}
                 likes={calcArrayOfObj(project.images, 'likes')}
-                onButtonClick={() => router.push(`/projects/${project.id}`)}
+                description={project.description}
+                stack={project.stack}
+                // onButtonClick={() => router.push(`/projects/${project.id}`)}
                 sx={{
                   maxWidth: '21rem',
                   marginLeft: 'auto',

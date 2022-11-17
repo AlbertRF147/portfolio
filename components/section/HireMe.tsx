@@ -35,7 +35,7 @@ const HireMe: React.FunctionComponent<HireMeProps> = (props) => {
       <CustomContainerGrid>
         <CustomGridItem item md order={{ xs: 2, md: 1 }}>
           <Typography component="h2" variant="h4" textAlign="center">
-            I am available as freelancer.
+            I am always open to new adventures.
           </Typography>
           <ButtonLink
             color="info"
@@ -58,7 +58,7 @@ const HireMe: React.FunctionComponent<HireMeProps> = (props) => {
             height={600}
             loading="lazy"
             onLoad={() => setIsLoaded(true)}
-            src="/sections/freelancer-male.svg"
+            src="/sections/adventure.svg"
             width={600}
           />
           {!isLoaded && (
