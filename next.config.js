@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  basePath: './my-portfolio',
+  basePath: '/',
   reactStrictMode: true,
   images: {
     loader: 'akamai',
