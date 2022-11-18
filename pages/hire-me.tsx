@@ -49,10 +49,10 @@ const HireMe: NextPage = (props) => {
               }}
             >
               <Typography component="h2" variant="h4">
-                Let's stay in touch.
+                Let&apos;s stay in touch.
               </Typography>
               <Typography component="p" variant="body1">
-                Great projects start with great ideas, and great ideas often arise during converstations. Don't hesitate to drop me a line if you'd like to reach out to me. I am always open for conversation.
+                Great projects start with great ideas, and great ideas often arise during converstations. Don&apos;t hesitate to drop me a line if you&apos;d like to reach out to me. I am always open for conversation.
               </Typography>
             </Box>
           </Grid>
