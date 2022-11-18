@@ -136,10 +136,10 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
           )}
         </Typography>
         <Container sx={{ display: 'flex', justifyContent: 'end' }}>
-          {stack && stack.map(_stack => (
+          {stack && stack.map((_stack, i) => (
             <Badge sx={{ padding: 1 }}>
               <IconContext.Provider value={{ size: '1.4rem' }}>
-                <StackIcon name={_stack} />
+                <StackIcon key={`stack-${i}`} name={_stack} />
               </IconContext.Provider>
             </Badge>
           ))}
