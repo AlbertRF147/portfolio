@@ -26,6 +26,7 @@ import InstagramIconLink from 'components/common/InstagramIconLink';
 import TwitterIconLink from 'components/common/TwitterIconLink';
 import ContainerGrid from 'components/common/ContainerGrid';
 import ExpandMoreIconButton from 'components/common/ExpandMoreIconButton';
+import Socials from 'components/common/Socials';
 // type
 interface AboutProps {}
 
@@ -110,7 +111,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
           <Grid item xs={12} md={6} lg={5} style={{ padding: 0 }}>
             <ImageWrapper>
               <Image
-                alt="John Doe profile image"
+                alt="Albert profile image"
                 layout="fill"
                 objectFit="cover"
                 objectPosition="left center"
@@ -145,29 +146,11 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
               </Typography>
               <CardContent>
                   <Typography variant='body1'>
-                    Frontend developer, with +3 years of experience mostly in ecommerce. I have great versatility and often I like to jump onto the back-end. Specialised in building pixel-perfect user experiences with huge amounts of traffic everyday. Used to work in fast-paced and high-demanding environments. A problem solver with strong troubleshooting skills. Overall, a fast learner, resilient and a great communicator.
+                    Frontend developer, with +3 years of experience mostly in ecommerce. I have great versatility and often I like to jump onto the back-end. I am specialised in building pixel-perfect user experiences with huge amounts of traffic everyday. Used to work in fast-paced and high-demanding environments.
+                    <br></br>
+                    <br></br>
+                    A problem solver with strong troubleshooting skills. Overall, a fast learner, resilient and a great communicator.
                   </Typography>
-                {/* <Collapse
-                  in={showMore}
-                  sx={{
-                    p: {
-                      marginTop: '0.5rem',
-                    },
-                  }}
-                  timeout="auto"
-                  unmountOnExit
-                >
-                  <Typography component="p" variant="body1">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Sed quis, vitae ea repellendus pariatur nihil ad cupiditate
-                    minima et quasi laborum. Amet eius, aliquam impedit modi
-                    tempore doloribus iusto. Nobis nam, unde officia iusto
-                    repellat obcaecati temporibus recusandae corrupti odit
-                    voluptatem dolor est ullam ad eligendi eum, et molestiae.
-                    Possimus porro adipisci reiciendis corrupti dignissimos fuga
-                    aliquam aperiam quisquam praesentium.
-                  </Typography>
-                </Collapse> */}
               </CardContent>
               <CustomCardActions disableSpacing>
                 {!isUpMd && (
@@ -179,11 +162,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
                     }}
                   />
                 )}
-                <div>
-                  <FacebookIconLink />
-                  <InstagramIconLink />
-                  <TwitterIconLink />
-                </div>
+                <Socials />
               </CustomCardActions>
             </Card>
           </Grid>

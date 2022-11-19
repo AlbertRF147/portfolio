@@ -10,14 +10,18 @@ import {
   CardContentProps,
   Typography,
   styled,
+  Badge,
 } from '@mui/material';
 // custom component
 import TextLink from 'components/common/TextLink';
 import FacebookIconLink from 'components/common/FacebookIconLink';
 import InstagramIconLink from 'components/common/InstagramIconLink';
 import TwitterIconLink from 'components/common/TwitterIconLink';
+import Socials from 'components/common/Socials';
 // custom context
 import ConstantsContext from 'context/constantsContext';
+import { SiFacebook, SiGithub, SiLinkedin } from 'react-icons/si';
+import { useRouter } from 'next/router';
 // type
 interface FooterProps {}
 
@@ -65,14 +69,10 @@ const Footer: React.FunctionComponent<FooterProps> = (props) => {
             </TextLink>
           ))}
         </CustomCardContent>
-        <CardContent sx={{ display: 'flex', justifyContent: 'center' }}>
-          <FacebookIconLink />
-          <InstagramIconLink />
-          <TwitterIconLink />
-        </CardContent>
+        <Socials />
       </CustomCard>
       <Typography component="p" variant="body1" textAlign="center">
-        Made with ❤️ at <TextLink href="https://mopeim.com">mopeim</TextLink>
+        Made with ❤️ by <TextLink href="https://github.com/AlbertRF147">AlbertRF147</TextLink>
       </Typography>
     </>
   );

@@ -50,18 +50,18 @@ const projectsData: Project[] = [
     date: dayjs().subtract(1, 'week'),
     id: 'portfolio',
     postFileName: 'portfolio',
-    title: 'Portfolio',
+    title: 'Portfolio v2',
     images: [
       {
         alt: 'portfolio cover picture',
         width: 600,
         height: 400,
         likes: 42,
-        src: '/projects/code.jpg',
+        src: '/projects/nextjs.jpeg',
       },
     ],
-    link: 'https://github.com/AlbertRF147/my-portfolio',
-    description: 'Re­cent­ly I up­dat­ed my port­fo­lio to give it a brush up and to make it mo­bile friend­ly. I used Re­act and a few oth­er li­braries and frame­works like Pure CSS and re­act-time­line. There is also an API de­vel­oped us­ing ex­press and node­mail­er that uses Gmail Google APIs to send me and email in case you wish to con­tact me 😉 .',
+    link: 'https://github.com/AlbertRF147/portfolio',
+    description: 'My newest portfolio site. It is built with React using NextJS and Material UI. It is hosted on Github pages and implements CI/CD via Github Actions. It is forked off of the "thebag" repo built by NextJS creators and adapted to my needs.',
     stack: ['mui', 'react', 'next']
   }),
   ProjectConstructor({
@@ -69,7 +69,7 @@ const projectsData: Project[] = [
     date: dayjs().subtract(1, 'week'),
     id: 'portfolio-old',
     postFileName: 'portfolioOld',
-    title: 'Portfolio (old)',
+    title: 'Portfolio v1',
     images: [
       {
         alt: 'old portfolio cover picture',

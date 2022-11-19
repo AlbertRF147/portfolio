@@ -91,14 +91,6 @@ const ExperienceCard: React.FunctionComponent<ExperienceCardProps> = (props) => 
         </CardTitleWrapper>
       </CustomCardContent>
       <CustomCardActions>
-        <Typography
-          color="text.secondary"
-          component="p"
-          fontSize="small"
-          variant="body1"
-        >
-          {readTime} min read
-        </Typography>
         <Box>
           <ButtonLink href={href}>read more</ButtonLink>
         </Box>
