@@ -121,7 +121,7 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
         )}
       </ImageContainer>
       <CardContent>
-        <Typography component="h3" variant="h6" textAlign="center">
+        <Typography component="h3" variant="h6" textAlign="center" marginBottom={1}>
           {isLoaded ? (
             title
           ) : (
