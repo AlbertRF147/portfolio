@@ -26,7 +26,6 @@ import MenuToggler from 'components/common/MenuToggler';
 import ConstantsContext from 'context/constantsContext';
 import useOnClickOutside from 'hooks/useOnClickOutside';
 import ComponentsContext from 'context/componentsContext';
-import Projects from 'pages/projects';
 // type
 interface CustomAppBarProps {}
 
