@@ -1,8 +1,8 @@
 // react
-import * as React from 'react';
+import * as React from 'react'
 // next
-import dynamic from 'next/dynamic';
-const Image = dynamic(() => import('next/image'));
+import dynamic from 'next/dynamic'
+const Image = dynamic(() => import('next/image'))
 // @mui
 import {
   Box,
@@ -22,27 +22,37 @@ import {
   useTheme,
   Container,
   Badge,
-} from '@mui/material';
+  Button,
+  Link,
+} from '@mui/material'
 // @mui icons
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight'
+import FavoriteIcon from '@mui/icons-material/Favorite'
 // custom component
-import CustomButton from 'components/common/CustomButton';
-import { SiJavascript, SiMaterialui, SiMongodb, SiNextdotjs, SiReact, SiVuedotjs } from 'react-icons/si';
-import { IconContext } from 'react-icons';
+import CustomButton from 'components/common/CustomButton'
+import {
+  SiJavascript,
+  SiMaterialui,
+  SiMongodb,
+  SiNextdotjs,
+  SiReact,
+  SiVuedotjs,
+} from 'react-icons/si'
+import { IconContext } from 'react-icons'
 // type
 interface ProjectCardProps extends CardProps {
-  imageAlt: string;
-  imageSrc: string;
-  title: string;
-  likes: number;
-  description?: string;
-  stack?: string[];
-  onButtonClick?: () => void;
+  imageAlt: string
+  imageSrc: string
+  title: string
+  likes: number
+  description?: string
+  stack?: string[]
+  link: string
+  onButtonClick?: () => void
 }
 
 interface StackProps {
-  name: string;
+  name: string
 }
 
 const StackIcon: React.FunctionComponent<StackProps> = (props) => {
@@ -50,19 +60,19 @@ const StackIcon: React.FunctionComponent<StackProps> = (props) => {
   switch (name) {
     case 'react':
       return <SiReact />
-  
+
     case 'vue':
       return <SiVuedotjs />
-  
+
     case 'next':
       return <SiNextdotjs />
-  
+
     case 'mui':
       return <SiMaterialui />
-  
+
     case 'vanilla':
       return <SiJavascript />
-  
+
     case 'mongodb':
       return <SiMongodb />
 
@@ -83,7 +93,7 @@ const CustomCard = styled(Card)<CardProps>(({ theme }) => ({
       WebkitFilter: 'blur(2px)',
     },
   },
-}));
+}))
 
 const ImageContainer = styled(Box)<BoxProps>(({ theme }) => ({
   position: 'relative',
@@ -91,15 +101,29 @@ const ImageContainer = styled(Box)<BoxProps>(({ theme }) => ({
   height: '12rem',
   borderRadius: theme.shape.borderRadius,
   overflow: 'hidden',
-}));
+}))
 
 const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
-  const { imageAlt, imageSrc, likes, title, description, stack, onButtonClick, ...otherProps } =
-    props;
-  const [isLoaded, setIsLoaded] = React.useState(false);
+  const {
+    imageAlt,
+    imageSrc,
+    likes,
+    title,
+    description,
+    stack,
+    link,
+    onButtonClick,
+    ...otherProps
+  } = props
+  const [isLoaded, setIsLoaded] = React.useState(false)
   const {
     palette: { primary },
-  } = useTheme();
+  } = useTheme()
+
+  const handleOnClick = (e: Event) => {
+    e.preventDefault()
+
+  }
 
   return (
     <CustomCard {...otherProps}>
@@ -107,28 +131,33 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
         <Image
           alt={imageAlt}
           src={imageSrc}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="top center"
+          layout='fill'
+          objectFit='cover'
+          objectPosition='top center'
           onLoad={() => setIsLoaded(true)}
           quality={30}
         />
         {!isLoaded && (
           <Skeleton
-            variant="rectangular"
+            variant='rectangular'
             sx={{ backgroundColor: primary.main, height: '100%' }}
           />
         )}
       </ImageContainer>
       <CardContent>
-        <Typography component="h3" variant="h6" textAlign="center" marginBottom={1}>
+        <Typography
+          component='h3'
+          variant='h6'
+          textAlign='center'
+          marginBottom={1}
+        >
           {isLoaded ? (
             title
           ) : (
             <Skeleton sx={{ backgroundColor: primary.main }} />
           )}
         </Typography>
-        <Typography component="p" variant='body2'>
+        <Typography component='p' variant='body2'>
           {isLoaded ? (
             description
           ) : (
@@ -136,17 +165,21 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
           )}
         </Typography>
         <Container sx={{ display: 'flex', justifyContent: 'end' }}>
-          {stack && stack.map((_stack, i) => (
-            <Badge key={`stack-${i}`} sx={{ padding: 1 }}>
-              <IconContext.Provider value={{ size: '1.4rem' }}>
-                <StackIcon name={_stack} />
-              </IconContext.Provider>
-            </Badge>
-          ))}
+          {stack &&
+            stack.map((_stack, i) => (
+              <Badge key={`stack-${i}`} sx={{ padding: 1 }}>
+                <IconContext.Provider value={{ size: '1.4rem' }}>
+                  <StackIcon name={_stack} />
+                </IconContext.Provider>
+              </Badge>
+            ))}
         </Container>
+        <Link underline='none' href={link} variant='body1' target='_blank' rel='noopener'>
+          See more
+        </Link>
       </CardContent>
     </CustomCard>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard
