@@ -32,7 +32,7 @@ const CustomCard = styled(Card)<CardProps>(({ theme }) => ({
   maxWidth: '32rem',
 }))
 
-const ContactForm: React.FunctionComponent<ContactFormProps> = (props) => {
+const ContactForm: React.FunctionComponent = (props) => {
   const toCapitalize = (string: string) => {
     return string.charAt(0).toUpperCase() + string.slice(1)
   }
