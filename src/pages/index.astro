@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Menu from "../components/Menu.astro";
+import About from "../components/About.astro";
+import Experiences from "../components/Experiences.astro";
+import Socials from "../components/Socials.astro";
+import Projects from "../components/Projects.astro";
+
+const entries = [
+	{
+		name: "About",
+		link: "about",
+		active: true,
+	},
+	{
+		name: "Experience",
+		link: "experience",
+	},
+	{
+		name: "Projects",
+		link: "projects",
+	},
+];
+---
+
+<Layout title="AlbertRF">
+	<div class="background fixed -z-30 min-h-screen w-screen"></div>
+
+	<main class="mx-auto min-h-screen max-w-screen-xl px-12 py-24 lg:py-0 lg:px-24 2xl:px-0">
+		<div class="flex flex-col lg:flex-row h-full justify-center gap-x-10">
+			<div
+				class="flex relative flex-col flex-1 min-h-full lg:pb-28 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:py-24"
+			>
+				<div class="">
+					<h1
+						class="text-white text-6xl scale-y-[1.3] font-semibold mb-4 name-title"
+					>
+						Albert Rovira Fernandez
+					</h1>
+					<section class="max-w-[65%]">
+						<h4 class="text-2xl mb-6">Senior Frontend Developer</h4>
+						<p class="text-normal font-light">
+							Highly experienced in ecommerce business, I build pixel-perfect
+							solutions for the most demanding clients.
+						</p>
+					</section>
+					<Menu entries={entries} />
+				</div>
+				<Socials />
+			</div>
+
+			<div class="lg:pt-28 flex-1">
+				<About />
+				<Experiences />
+				<Projects />
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.name-title {
+		font-family: "Roboto Condensed", sans-serif;
+	}
+</style>

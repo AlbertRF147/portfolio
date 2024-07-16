@@ -1,0 +1,15 @@
+---
+import MenuEntry from './MenuEntry.astro'
+
+interface Props {
+	entries: MenuEntry[] 
+}
+
+const { entries } = Astro.props;
+---
+
+<script src="../scripts/highlightMenuEntries.js"></script>
+
+<ul class="menu-entries my-16 hidden lg:block">
+	{entries.map(entry => <MenuEntry {...entry} />)}
+</ul>

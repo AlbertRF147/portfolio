@@ -1,0 +1,31 @@
+---
+import Tags from './Tags.astro'
+interface Props {
+	experience: Experience;
+}
+
+const { experience }: Props = Astro.props;
+const { tags = [] } = experience;
+---
+
+<li class="grid grid-cols-6 mt-10 list-none">
+	<div class="flex text-normal/50 gap-x-2 col-span-2">
+		<span class="tracking-wide uppercase text-sm">
+			{`${experience.startDate} — ${experience.endDate}`}
+		</span>
+	</div>
+	<div class="flex flex-col gap-y-3 col-span-4">
+		<div class="flex flex-col">
+			<span>
+				{experience.company}
+			</span>
+			<span class="text-normal/50">
+				{experience.role}
+			</span>
+		</div>
+		<p class="text-sm font-light">
+			{experience.description}
+		</p>
+		<Tags tags={tags} />
+	</div>
+</li>

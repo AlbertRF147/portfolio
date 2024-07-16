@@ -1,0 +1,10 @@
+---
+import Section from "./Section.astro"
+import Project from "./Project.astro"
+
+import { projects } from "../data/projects"
+---
+
+<Section id="projects" title="Projects">
+	{projects.map(project => <Project {...project} />)}
+</Section>

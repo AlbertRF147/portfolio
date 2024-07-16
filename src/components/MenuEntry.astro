@@ -1,0 +1,12 @@
+---
+const { name, link, active } = Astro.props;
+---
+
+<li class="menu-entry my-3">
+	<a class="text-normal/50 inline-block group hover:text-white focus:text-white uppercase" href=`#${link}`>
+		<div class="flex gap-x-4 items-center">
+			<div class="line h-[1px] bg-white w-[30px] group-hover:w-[55px] group-focus:w-[55px]" />
+				<span>{name}</span>
+		</div>
+	</a>
+</li>

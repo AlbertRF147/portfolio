@@ -1,0 +1,45 @@
+---
+import Experience from "../components/Experience.astro";
+import Section from "../components/Section.astro";
+
+const experiences: Experience[] = [
+	{
+		company: "Cognizant Technology Solutions",
+		role: "Programmer Analyst",
+		startDate: "July 2019",
+		endDate: "Present",
+		tags: [{ name: "Node" as TagName }, { name: "React" as TagName }],
+		description:
+			"Working as a full stack developer in a project that involves developing and maintaining a web application for a leading US based healthcare company. The application is used by the client to manage their business operations and is built using Angular, Spring Boot and Oracle.",
+	},
+	{
+		company: "Cognizant Technology Solutions",
+		role: "Programmer Analyst Trainee",
+		startDate: "July 2019",
+		endDate: "Present",
+		description:
+			"Worked as a full stack developer in a project that involved developing and maintaining a web application for a leading US based healthcare company. The application is used by the client to manage their business operations and is built using Angular, Spring Boot and Oracle.",
+	},
+	{
+		company: "Cognizant Technology Solutions",
+		role: "Programmer Analyst",
+		startDate: "July 2019",
+		endDate: "Present",
+		tags: [{ name: "Node" as TagName }, { name: "React" as TagName }],
+		description:
+			"Working as a full stack developer in a project that involves developing and maintaining a web application for a leading US based healthcare company. The application is used by the client to manage their business operations and is built using Angular, Spring Boot and Oracle.",
+	},
+	{
+		company: "Cognizant Technology Solutions",
+		role: "Programmer Analyst Trainee",
+		startDate: "July 2019",
+		endDate: "Present",
+		description:
+			"Worked as a full stack developer in a project that involved developing and maintaining a web application for a leading US based healthcare company. The application is used by the client to manage their business operations and is built using Angular, Spring Boot and Oracle.",
+	},
+];
+---
+
+<Section id="experience" title="Experience">
+	{experiences.map((experience) => <Experience experience={experience} />)}
+</Section>

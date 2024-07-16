@@ -1,0 +1,16 @@
+---
+import { Icon } from "astro-icon/components";
+
+const icons = ["codepen", "discord", "github", "stack-overflow", "email"];
+---
+
+<div class="flex items-center gap-x-6 my-10 lg:my-0">
+	{
+		icons.map((icon) => (
+			<Icon
+				class="text-normal/70 text-3xl hover:text-white cursor-pointer"
+				name={icon}
+			/>
+		))
+	}
+</div>
