@@ -5,6 +5,7 @@ declare interface MenuEntry {
 }
 
 declare interface Experience {
+	order: number;
 	company: string;
 	role: string;
 	startDate: string;

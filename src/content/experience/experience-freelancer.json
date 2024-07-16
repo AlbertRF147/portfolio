@@ -1,0 +1,19 @@
+{
+  "company": "Freelancer.com",
+  "role": "Freelance Frontend Developer",
+  "startDate": "03/2019",
+  "endDate": "09/2020",
+  "description": "Participated in a contest to redesign a multistep webform using VueJS. Finished in position #2 out of the other 44 submissions. Won the second price and received recognition for my submission.",
+  "order": 1,
+  "tags": [
+    {
+      "name": "VueJS"
+    },
+    {
+      "name": "HTML"
+    },
+    {
+      "name": "CSS"
+    }
+  ]
+}

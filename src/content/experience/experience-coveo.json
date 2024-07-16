@@ -1,0 +1,31 @@
+{
+  "company": "Coveo",
+  "role": "Solutions Specialist - Frontend",
+  "startDate": "11/2022",
+  "endDate": "03/2023",
+  "description": "Building search frontends powered by AI, with bespoke and reusable components using React, Stencil and Typescript. Constantly contributing and maintaining the shareable components codebase in a git repository. Providing the best support and technical scopings to clients inside the PS and Sales departments.",
+  "order": 3,
+  "tags": [
+    {
+      "name": "Javascript"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "StencilJS"
+    },
+    {
+      "name": "Web Components"
+    },
+    {
+      "name": "Typescript"
+    },
+    {
+      "name": "HTML"
+    },
+    {
+      "name": "CSS"
+    }
+  ]
+}

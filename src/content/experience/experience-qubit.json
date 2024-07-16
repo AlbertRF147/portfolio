@@ -1,0 +1,25 @@
+{
+  "company": "Qubit",
+  "role": "Client Engineer - Frontend",
+  "startDate": "09/2020",
+  "endDate": "11/2021",
+  "description": "Quickly escalated in the role as I took ownership of the most demanding accounts working for clients like LV, Estee Lauder, TJX and more. One of the most productive contributors in the codebase. Created highly scalable serverless integrations written in NodeJS and deployed as lambda functions which received up to 6 ops/sec in some cases. Created high traffic bestspoke user interfaces run as A/B tests and written in Javascript/React.",
+  "order": 2,
+  "tags": [
+    {
+      "name": "Javascript"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "A/B Testing"
+    },
+    {
+      "name": "HTML"
+    },
+    {
+      "name": "CSS"
+    }
+  ]
+}

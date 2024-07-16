@@ -1,0 +1,34 @@
+{
+  "company": "Netenders",
+  "role": "Senior Frontend Developer",
+  "startDate": "03/2023",
+  "endDate": "07/2024",
+  "description": "Created the new Customiser Tool for product printing using React, react hooks, Redux and FabricJS (canvas). Currently working on the redesign of Wordans site, moving towards newer tech stack with Hotwire’s Turbo, Tailwind, AlpineJS and VanillaJS. Actively contributing in our Ruby on Rails backend adding new features to the back office and adapting controllers as needed.",
+  "order": 4,
+  "tags": [
+    {
+      "name": "Javascript"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "AlpineJS"
+    },
+    {
+      "name": "TailwindCSS"
+    },
+    {
+      "name": "Typescript"
+    },
+    {
+      "name": "Ruby on Rails"
+    },
+    {
+      "name": "HTML"
+    },
+    {
+      "name": "CSS"
+    }
+  ]
+}
