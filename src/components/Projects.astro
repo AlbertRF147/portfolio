@@ -2,9 +2,12 @@
 import Section from "./Section.astro"
 import Project from "./Project.astro"
 
-import { projects } from "../data/projects"
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('project')
+const sortedProjects = projects.sort((a, b) => b.data.order - a.data.order)
 ---
 
 <Section id="projects" title="Projects">
-	{projects.map(project => <Project {...project} />)}
+	{sortedProjects.map(project => <Project {...project.data} />)}
 </Section>

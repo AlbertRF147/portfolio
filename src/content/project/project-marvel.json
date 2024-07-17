@@ -1,0 +1,29 @@
+{
+  "title": "Marvel App",
+  "description": "Responisve web app that fetches data from the Marvel API and displays it in a user-friendly way.",
+  "tags": [
+    {
+      "name": "Typescript"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "Jest"
+    },
+    {
+      "name": "RTL"
+    },
+    {
+      "name": "Webpack"
+    },
+    {
+      "name": "Context API"
+    },
+    {
+      "name": "Styled Components"
+    }
+  ],
+  "link": "https://github.com/AlbertRF147/marvel-app",
+  "image": "/src/assets/Marvel_Logo.svg"
+}

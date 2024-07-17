@@ -1,0 +1,26 @@
+{
+  "title": "Memo Cards",
+  "description": "A minimalistic memo cards game for the web.",
+  "tags": [
+    {
+      "name": "Typescript"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "Vite"
+    },
+    {
+      "name": "Context API"
+    },
+    {
+      "name": "Jest"
+    },
+    {
+      "name": "React Router v6"
+    }
+  ],
+  "link": "https://github.com/AlbertRF147/marvel-app",
+  "image": "/src/assets/memory_game.webp"
+}

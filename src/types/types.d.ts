@@ -12,6 +12,7 @@ declare interface Experience {
 	endDate: string;
 	description: string;
 	tags?: Tag[];
+	link?: string;
 }
 
 declare enum TagName {

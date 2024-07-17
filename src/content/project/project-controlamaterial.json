@@ -1,0 +1,26 @@
+{
+  "title": "Controlamaterial",
+  "description": "Inventory app focused on schools. It allows centers to manage all their inventories with ease.",
+  "tags": [
+    {
+      "name": "NodeJS"
+    },
+    {
+      "name": "ExpressJS"
+    },
+    {
+      "name": "MongoDB"
+    },
+    {
+      "name": "EJS"
+    },
+    {
+      "name": "Datatables"
+    },
+    {
+      "name": "Bootstrap v5"
+    }
+  ],
+  "link": "https://github.com/AlbertRF147/marvel-app",
+  "image": "/src/assets/books.svg"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Portfolio",
+  "description": "This very portfolio, which is the newest version of many iterations. It served as a learning platform for Astro.",
+  "tags": [
+    {
+      "name": "Typescript"
+    },
+    {
+      "name": "Astro"
+    },
+    {
+      "name": "TailwindCSS"
+    }
+  ],
+  "link": "https://github.com/AlbertRF147/marvel-app",
+  "image": "/src/assets/portfolio.webp"
+}
