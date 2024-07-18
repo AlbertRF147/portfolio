@@ -39,6 +39,6 @@ declare interface Project {
 	title: string;
 	description: string;
 	tags?: Tag[];
-	link: string;
+	link?: string;
 	image: string;
 }

@@ -1,0 +1,21 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	link?: string;
+	title: string;
+}
+
+const { link, title }: Props = Astro.props;
+---
+
+<a
+	class="group hover:text-vanilla cursor-pointer flex items-center gap-x-2"
+	href={link}
+	target="_blank"
+>
+	<span>
+		{title}
+	</span>
+	<Icon name="arrow-square" class="" />
+</a>
