@@ -1,3 +1,10 @@
+declare interface Social {
+	name: string;
+	link?: string;
+	tooltip?: string;
+	icon: string;
+}
+
 declare interface MenuEntry {
 	name: string;
 	link: string;

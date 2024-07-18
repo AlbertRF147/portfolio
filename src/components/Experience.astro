@@ -9,15 +9,15 @@ const { experience }: Props = Astro.props;
 const { tags = [] } = experience;
 ---
 
-<li class="grid grid-cols-6 mt-10 list-none">
-	<div class="flex text-normal/50 gap-x-2 col-span-2">
-		<span class="tracking-wide uppercase text-sm">
+<li class="md:grid grid-cols-6 mb-10 md:mb-14 list-none">
+	<div class="flex text-normal/50 gap-x-2 col-span-2 mt-1">
+		<span class="tracking-wide uppercase text-sm mb-2 md:mb-0">
 			{`${experience.startDate} — ${experience.endDate}`}
 		</span>
 	</div>
 	<div class="flex flex-col gap-y-3 col-span-4">
 		<div class="flex flex-col">
-			<a class="group hover:text-vanilla cursor-pointer flex items-center gap-x-2" href={experience.link}>
+			<a class="group hover:text-vanilla cursor-pointer flex items-center gap-x-2" href={experience.link} target="_blank">
 				<span>
 					{experience.company}
 				</span>

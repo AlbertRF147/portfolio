@@ -1,16 +1,21 @@
 ---
 import { Icon } from "astro-icon/components";
 
-const icons = ["codepen", "discord", "github", "stack-overflow", "email"];
+import { getCollection } from "astro:content";
+
+const socials = await getCollection("social");
 ---
 
 <div class="flex items-center gap-x-6 my-10 lg:my-0">
 	{
-		icons.map((icon) => (
-			<Icon
-				class="text-normal/70 text-3xl hover:text-white cursor-pointer"
-				name={icon}
-			/>
+		socials.map((social) => (
+			<a href={social.data.link} target="_blank">
+				<Icon
+					class="text-normal/70 text-3xl hover:text-vanilla cursor-pointer"
+					name={social.data.icon}
+					title={social.data.name}
+				/>
+			</a>
 		))
 	}
 </div>

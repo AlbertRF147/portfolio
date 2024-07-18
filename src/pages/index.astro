@@ -5,6 +5,7 @@ import About from "../components/About.astro";
 import Experiences from "../components/Experiences.astro";
 import Socials from "../components/Socials.astro";
 import Projects from "../components/Projects.astro";
+import { Icon } from "astro-icon/components";
 
 const entries = [
 	{
@@ -26,7 +27,9 @@ const entries = [
 <Layout title="AlbertRF">
 	<div class="background fixed -z-30 min-h-screen w-screen"></div>
 
-	<main class="mx-auto min-h-screen max-w-screen-xl px-12 py-24 lg:py-0 lg:px-24 2xl:px-0">
+	<main
+		class="mx-auto min-h-screen max-w-screen-xl px-12 py-24 lg:py-0 lg:px-24 2xl:px-0"
+	>
 		<div class="flex flex-col lg:flex-row h-full justify-center gap-x-10">
 			<div
 				class="flex relative flex-col flex-1 min-h-full lg:pb-28 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:py-24"
@@ -37,7 +40,7 @@ const entries = [
 					>
 						Albert Rovira Fernandez
 					</h1>
-					<section class="max-w-[65%]">
+					<section class="md:max-w-[65%]">
 						<h4 class="text-2xl mb-6">Senior Frontend Developer</h4>
 						<p class="text-normal font-light">
 							Highly experienced in ecommerce business, I build pixel-perfect
@@ -45,6 +48,12 @@ const entries = [
 						</p>
 					</section>
 					<Menu entries={entries} />
+						<a href="https://drive.google.com/file/d/18Hj3vPrzg2xADRpaHUDPGDf_Io2sfU6-/view?usp=drive_link" class="group" target="_blank">
+							<div class="flex text-normal group-hover:text-vanilla items-center gap-x-2">
+								<h3 class="font-light text-lg">Get Resume</h3>
+								<Icon name="file" />
+							</div>
+						</a>
 				</div>
 				<Socials />
 			</div>
